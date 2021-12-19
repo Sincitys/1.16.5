@@ -3,7 +3,7 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "dagrum_head",
+    "textureHelmet": "dagrum_helmet",
     "enableBody": true,
     "textureBody": "dagrum_body",
     "enableLeggings": true,

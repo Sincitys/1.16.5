@@ -36,7 +36,6 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.projectmoira.item.DagrumIngotItem;
 import net.mcreator.projectmoira.ProjectMoiraModElements;
 
 import java.util.Random;
@@ -63,14 +62,14 @@ public class DagrumOreBlock extends ProjectMoiraModElements.ModElement {
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(3f, 5f).setLightLevel(s -> 0).harvestLevel(2)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(3f, 5f).setLightLevel(s -> 2).harvestLevel(2)
 					.harvestTool(ToolType.PICKAXE).setRequiresTool());
 			setRegistryName("dagrum_ore");
 		}
 
 		@Override
 		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
-			return 15;
+			return 5;
 		}
 
 		@Override
@@ -78,7 +77,7 @@ public class DagrumOreBlock extends ProjectMoiraModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(DagrumIngotItem.block));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 	}
 

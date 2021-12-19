@@ -33,7 +33,7 @@ public class DagrumSwordItem extends ProjectMoiraModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 0f;
+				return 4f;
 			}
 
 			public int getHarvestLevel() {
