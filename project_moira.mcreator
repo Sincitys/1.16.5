@@ -236,6 +236,16 @@
       "ids": {},
       "registry_name": "teradirt",
       "path": "~/Teraland"
+    },
+    {
+      "name": "Teraflower",
+      "type": "plant",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "teraflower",
+      "path": "~/Teraland"
     }
   ],
   "variable_elements": [],
@@ -247,6 +257,7 @@
       "item.project_moira.dagrum_armor_chestplate": "Dagrum Chestplate",
       "item.project_moira.dagrum_armor_leggings": "Dagrum Leggings",
       "biome.project_moira.teraland": "Teraland",
+      "block.project_moira.teraflower": "Teraflower",
       "item.project_moira.dagrum_axe": "Dagrum Axe",
       "block.project_moira.teradirt": "Teradirt",
       "block.project_moira.dagrum_ore": "Dagrum Ore",
