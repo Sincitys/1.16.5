@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "project_moira:dagrum_block"
+    }
+  ],
+  "result": {
+    "item": "project_moira:dagrum_ingot",
+    "count": 9
+  }
+}

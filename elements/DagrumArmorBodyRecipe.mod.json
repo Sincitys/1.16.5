@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DagrumIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DagrumIngot"
+      },
+      {
+        "value": "CUSTOM:DagrumIngot"
+      },
+      {
+        "value": "CUSTOM:DagrumIngot"
+      },
+      {
+        "value": "CUSTOM:DagrumIngot"
+      },
+      {
+        "value": "CUSTOM:DagrumIngot"
+      },
+      {
+        "value": "CUSTOM:DagrumIngot"
+      },
+      {
+        "value": "CUSTOM:DagrumIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DagrumArmor.body"
+    },
+    "name": "dagrum_armor_body_recipe",
+    "namespace": "mod"
+  }
+}

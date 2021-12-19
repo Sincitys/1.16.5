@@ -1,14 +1,249 @@
 {
   "id_map": {},
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "DagrumIngot",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_ingot",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumOre",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_ore",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumBlock",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_block",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_ore_block_recipe",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_block_ore_recipe",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumOreSmelting",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_ore_smelting",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumPickaxe",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_pickaxe",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumAxe",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_axe",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumSword",
+      "type": "tool",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_sword",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumShovel",
+      "type": "tool",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_shovel",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumHoe",
+      "type": "tool",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_hoe",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_pickaxe_recipe",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumAxeRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_axe_recipe",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumSwordRecipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_sword_recipe",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumShovelRecipe",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_shovel_recipe",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumHoeRecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_hoe_recipe",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumArmor",
+      "type": "armor",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_armor_helmet_recipe",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_armor_body_recipe",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_armor_leggings_recipe",
+      "path": "~/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_armor_boots_recipe",
+      "path": "~/Dagrum Tier 1"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.project_moira.dagrum_armor_helmet": "Dagrum Helmet",
+      "item.project_moira.dagrum_armor_boots": "Dagrum Boots",
+      "item.project_moira.dagrum_armor_chestplate": "Dagrum Chestplate",
+      "item.project_moira.dagrum_armor_leggings": "Dagrum Leggings",
+      "item.project_moira.dagrum_axe": "Dagrum Axe",
+      "block.project_moira.dagrum_ore": "Dagrum Ore",
+      "item.project_moira.dagrum_ingot": "Dagrum",
+      "block.project_moira.dagrum_block": "Block of Dagrum",
+      "item.project_moira.dagrum_sword": "Dagrum Sword",
+      "item.project_moira.dagrum_hoe": "Dagrum Hoe",
+      "item.project_moira.dagrum_pickaxe": "Dagrum Pickaxe",
+      "item.project_moira.dagrum_shovel": "Dagrum Shovel"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Dagrum Tier 1",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "project_moira",

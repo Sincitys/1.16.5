@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "project_moira:dagrum_ingot"
+    },
+    "2": {
+      "item": "project_moira:dagrum_ingot"
+    },
+    "3": {
+      "item": "project_moira:dagrum_ingot"
+    },
+    "5": {
+      "item": "project_moira:dagrum_ingot"
+    }
+  },
+  "result": {
+    "item": "project_moira:dagrum_armor_boots",
+    "count": 1
+  }
+}

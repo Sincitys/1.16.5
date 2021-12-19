@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "project_moira:blocks/dagrum_ore",
+    "particle": "project_moira:blocks/dagrum_ore"
+  }
+}
