@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "project_moira:blocks/teradirt_block",
-    "up": "project_moira:blocks/teradirt_block",
-    "north": "project_moira:blocks/teradirt_block",
-    "east": "project_moira:blocks/teradirt_block",
-    "south": "project_moira:blocks/teradirt_block",
-    "west": "project_moira:blocks/teradirt_block",
+    "all": "project_moira:blocks/teradirt_block",
     "particle": "project_moira:blocks/teradirt_block"
   }
 }

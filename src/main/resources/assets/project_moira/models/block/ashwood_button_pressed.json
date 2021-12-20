@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_pressed",
+  "textures": {
+    "texture": "project_moira:blocks/ashwood_planks"
+  }
+}

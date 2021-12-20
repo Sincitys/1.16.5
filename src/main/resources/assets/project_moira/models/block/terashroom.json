@@ -1,0 +1,7 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "project_moira:blocks/terashroom",
+    "particle": "project_moira:blocks/terashroom"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "project_moira:blocks/teradirt_block",
+    "top": "project_moira:blocks/teragrass_top",
+    "side": "project_moira:blocks/teragrass_block_side",
+    "overlay": "project_moira:blocks/teradirt_block",
+    "particle": "project_moira:blocks/teradirt_block"
+  }
+}

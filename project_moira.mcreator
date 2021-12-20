@@ -246,6 +246,286 @@
       "ids": {},
       "registry_name": "teraflower",
       "path": "~/Teraland"
+    },
+    {
+      "name": "LogBlocks",
+      "type": "tag",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "log_blocks",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "DirtBlocks",
+      "type": "tag",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_blocks",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "SmallFlowerItems",
+      "type": "tag",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "small_flower_items",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodWood",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_wood",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodLog",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_log",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodPlanks",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_planks",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodLeaves",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_leaves",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodStairs",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_stairs",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodSlab",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_slab",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodFence",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_fence",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodFenceGate",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_fence_gate",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodPressurePlate",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_pressure_plate",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodButton",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_button",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodItemsTag",
+      "type": "tag",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_items_tag",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodWoodRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_wood_recipe",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodPlanksRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_planks_recipe",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodStairsRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_stairs_recipe",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodSlabRecipe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_slab_recipe",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodFenceRecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_fence_recipe",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_fence_gate_recipe",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_pressure_plate_recipe",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodButtonRecipe",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_button_recipe",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "AshwoodStickRecipe",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashwood_stick_recipe",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "LeaveBlocks",
+      "type": "tag",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leave_blocks",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "Terashroom",
+      "type": "plant",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "terashroom",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "GrassBlocks",
+      "type": "tag",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grass_blocks",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "TeraPlants",
+      "type": "tag",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tera_plants",
+      "path": "~/Teraland"
+    },
+    {
+      "name": "Teragrass",
+      "type": "block",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "teragrass",
+      "path": "~/Teraland"
     }
   ],
   "variable_elements": [],
@@ -253,20 +533,32 @@
   "language_map": {
     "en_us": {
       "item.project_moira.dagrum_armor_helmet": "Dagrum Helmet",
-      "item.project_moira.dagrum_armor_boots": "Dagrum Boots",
       "item.project_moira.dagrum_armor_chestplate": "Dagrum Chestplate",
-      "item.project_moira.dagrum_armor_leggings": "Dagrum Leggings",
       "biome.project_moira.teraland": "Teraland",
-      "block.project_moira.teraflower": "Teraflower",
+      "item.project_moira.dagrum_armor_leggings": "Dagrum Leggings",
       "item.project_moira.dagrum_axe": "Dagrum Axe",
+      "block.project_moira.ashwood_pressure_plate": "Ashwood Pressure Plate",
+      "block.project_moira.teragrass": "Teragrass",
       "block.project_moira.teradirt": "Teradirt",
+      "block.project_moira.ashwood_leaves": "Ashwood Leaves",
+      "block.project_moira.ashwood_fence_gate": "Ashwood Fence Gate",
       "block.project_moira.dagrum_ore": "Dagrum Ore",
-      "item.project_moira.dagrum_ingot": "Dagrum",
       "block.project_moira.dagrum_block": "Block of Dagrum",
+      "block.project_moira.ashwood_button": "Ashwood Button",
+      "block.project_moira.ashwood_stairs": "Ashwood Stairs",
+      "block.project_moira.ashwood_planks": "Ashwood Planks",
+      "item.project_moira.dagrum_shovel": "Dagrum Shovel",
+      "block.project_moira.terashroom": "Terashroom",
+      "item.project_moira.dagrum_armor_boots": "Dagrum Boots",
+      "block.project_moira.ashwood_log": "Ashwood Log",
+      "block.project_moira.teraflower": "Teraflower",
+      "block.project_moira.ashwood_wood": "Ashwood Wood",
+      "item.project_moira.dagrum_ingot": "Dagrum",
+      "block.project_moira.ashwood_slab": "Ashwood Slab",
+      "block.project_moira.ashwood_fence": "Ashwood Fence",
       "item.project_moira.dagrum_sword": "Dagrum Sword",
       "item.project_moira.dagrum_hoe": "Dagrum Hoe",
-      "item.project_moira.dagrum_pickaxe": "Dagrum Pickaxe",
-      "item.project_moira.dagrum_shovel": "Dagrum Shovel"
+      "item.project_moira.dagrum_pickaxe": "Dagrum Pickaxe"
     }
   },
   "foldersRoot": {

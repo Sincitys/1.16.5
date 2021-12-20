@@ -1,0 +1,6 @@
+{
+  "parent": "block/pressure_plate_up",
+  "textures": {
+    "texture": "project_moira:blocks/ashwood_planks"
+  }
+}

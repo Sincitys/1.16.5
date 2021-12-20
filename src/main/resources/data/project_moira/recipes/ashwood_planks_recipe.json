@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:ashwood_log"
+    }
+  ],
+  "result": {
+    "item": "project_moira:ashwood_planks",
+    "count": 4
+  }
+}

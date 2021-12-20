@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "project_moira:blocks/ashwood_planks",
+    "particle": "project_moira:blocks/ashwood_planks"
+  }
+}

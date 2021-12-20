@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "project_moira:block/ashwood_pressure_plate"
+    },
+    "powered=true": {
+      "model": "project_moira:block/ashwood_pressure_plate_down"
+    }
+  }
+}

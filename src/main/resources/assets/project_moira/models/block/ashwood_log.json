@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "project_moira:blocks/ashwood_log_top",
+    "up": "project_moira:blocks/ashwood_log_top",
+    "north": "project_moira:blocks/ash_wood_log",
+    "east": "project_moira:blocks/ash_wood_log",
+    "south": "project_moira:blocks/ash_wood_log",
+    "west": "project_moira:blocks/ash_wood_log",
+    "particle": "project_moira:blocks/ashwood_log_top"
+  }
+}

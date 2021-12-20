@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Teradirt"
+      },
+      {
+        "value": "CUSTOM:Teragrass"
+      },
+      {
+        "value": "CUSTOM:DagrumBlock"
+      },
+      {
+        "value": "Blocks.DIRT#1"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "dirt",
+    "namespace": "forge"
+  }
+}

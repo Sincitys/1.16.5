@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "project_moira:ashwood_planks"
+    },
+    "3": {
+      "item": "project_moira:ashwood_planks"
+    },
+    "4": {
+      "item": "project_moira:ashwood_planks"
+    },
+    "6": {
+      "item": "project_moira:ashwood_planks"
+    },
+    "7": {
+      "item": "project_moira:ashwood_planks"
+    },
+    "8": {
+      "item": "project_moira:ashwood_planks"
+    }
+  },
+  "result": {
+    "item": "project_moira:ashwood_stairs",
+    "count": 4
+  }
+}

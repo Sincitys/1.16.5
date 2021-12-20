@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "project_moira:ashwood_planks"
+    }
+  ],
+  "result": {
+    "item": "project_moira:ashwood_button",
+    "count": 1
+  }
+}

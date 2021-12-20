@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "project_moira:block/ashwood_slab"
+    },
+    "type=top": {
+      "model": "project_moira:block/ashwood_slab_top"
+    },
+    "type=double": {
+      "model": "project_moira:block/ashwood_slab_full"
+    }
+  }
+}

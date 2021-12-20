@@ -1,0 +1,6 @@
+{
+  "parent": "block/template_fence_gate_open",
+  "textures": {
+    "texture": "project_moira:blocks/ashwood_planks"
+  }
+}

@@ -4,17 +4,17 @@
   "definition": {
     "name": "Teraland",
     "groundBlock": {
-      "value": "CUSTOM:Teradirt"
+      "value": "CUSTOM:Teragrass"
     },
     "undergroundBlock": {
       "value": "CUSTOM:Teradirt"
     },
     "airColor": {
-      "value": -15132391,
+      "value": -13421773,
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -15527149,
+      "value": -1447447,
       "falpha": 0.0
     },
     "foliageColor": {
@@ -22,7 +22,7 @@
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -15329770,
+      "value": -526859,
       "falpha": 0.0
     },
     "waterFogColor": {
@@ -44,24 +44,24 @@
     "moodSoundDelay": 6000,
     "spawnParticles": true,
     "particleToSpawn": {
-      "value": "SUSPENDED_DEPTH"
+      "value": "SMOKE_NORMAL"
     },
-    "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
+    "particlesProbability": 2.5,
+    "biomeCategory": "PLAINS",
     "parent": {
-      "value": "No parent"
+      "value": "CUSTOM:Teraland"
     },
-    "rainingPossibility": 1.0,
-    "temperature": 1.5,
-    "baseHeight": 0.8,
-    "heightVariation": 0.3,
+    "rainingPossibility": 0.5,
+    "temperature": 1.0,
+    "baseHeight": 0.4,
+    "heightVariation": 0.8,
     "biomeType": "WARM",
     "spawnBiome": true,
-    "biomeWeight": 20,
+    "biomeWeight": 30,
     "biomeDictionaryTypes": [
-      "WASTELAND"
+      "RARE"
     ],
-    "grassPerChunk": 6,
+    "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
@@ -71,14 +71,14 @@
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
     "treesPerChunk": 3,
-    "vanillaTreeType": "Mega spruce trees",
+    "vanillaTreeType": "Mega pine trees",
     "treeType": 1,
-    "minHeight": 7,
+    "minHeight": 4,
     "treeStem": {
-      "value": "Blocks.LOG#2"
+      "value": "CUSTOM:AshwoodLog"
     },
     "treeBranch": {
-      "value": "Blocks.LEAVES#2"
+      "value": "CUSTOM:AshwoodLeaves"
     },
     "treeVines": {
       "value": ""
@@ -108,9 +108,28 @@
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Caves",
-      "Ores",
-      "FrozenTopLayer"
+      "Lakes",
+      "OceanCaves"
     ],
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntitySkeleton"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityWolf"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "monster"
+      }
+    ]
   }
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "project_moira:blocks/ashwood_leaves",
+    "particle": "project_moira:blocks/ashwood_leaves"
+  }
+}
