@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "ashfruit_chunks",
+    "customModelName": "Normal",
+    "name": "Ash Fruit Chunks",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 20,
+    "nutritionalValue": 8,
+    "saturation": 0.8,
+    "eatingSpeed": 46,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": true
+  }
+}

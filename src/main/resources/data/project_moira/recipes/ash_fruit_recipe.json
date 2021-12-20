@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "project_moira:ash_fruit"
+    }
+  ],
+  "result": {
+    "item": "project_moira:ash_fruit_chunks",
+    "count": 1
+  }
+}

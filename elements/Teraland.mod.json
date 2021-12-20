@@ -47,7 +47,7 @@
       "value": "SMOKE_NORMAL"
     },
     "particlesProbability": 2.5,
-    "biomeCategory": "PLAINS",
+    "biomeCategory": "FOREST",
     "parent": {
       "value": "CUSTOM:Teraland"
     },
@@ -57,9 +57,12 @@
     "heightVariation": 0.8,
     "biomeType": "WARM",
     "spawnBiome": true,
-    "biomeWeight": 30,
+    "biomeWeight": 50,
     "biomeDictionaryTypes": [
-      "RARE"
+      "RARE",
+      "JUNGLE",
+      "SPOOKY",
+      "WASTELAND"
     ],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
@@ -71,7 +74,7 @@
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
     "treesPerChunk": 3,
-    "vanillaTreeType": "Mega pine trees",
+    "vanillaTreeType": "Big trees",
     "treeType": 1,
     "minHeight": 4,
     "treeStem": {
@@ -84,7 +87,7 @@
       "value": ""
     },
     "treeFruits": {
-      "value": ""
+      "value": "CUSTOM:AshFruit"
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,

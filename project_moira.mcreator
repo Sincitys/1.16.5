@@ -526,6 +526,76 @@
       "ids": {},
       "registry_name": "teragrass",
       "path": "~/Dylan Work/Teraland"
+    },
+    {
+      "name": "AshFruit",
+      "type": "plant",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ash_fruit",
+      "path": "~/Dylan Work/Teraland"
+    },
+    {
+      "name": "AshFruitChunks",
+      "type": "food",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ash_fruit_chunks",
+      "path": "~/Dylan Work/Teraland"
+    },
+    {
+      "name": "AshFruitRecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ash_fruit_recipe",
+      "path": "~/Dylan Work/Teraland"
+    },
+    {
+      "name": "InvisBlock",
+      "type": "plant",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "invis_block",
+      "path": "~/Dylan Work/Teraland"
+    },
+    {
+      "name": "InvisBlockUpdateTick",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "invis_block_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dylan Work/Teraland"
     }
   ],
   "variable_elements": [],
@@ -534,11 +604,12 @@
     "en_us": {
       "item.project_moira.dagrum_armor_helmet": "Dagrum Helmet",
       "item.project_moira.dagrum_armor_chestplate": "Dagrum Chestplate",
-      "item.project_moira.dagrum_armor_leggings": "Dagrum Leggings",
       "biome.project_moira.teraland": "Teraland",
+      "item.project_moira.dagrum_armor_leggings": "Dagrum Leggings",
       "item.project_moira.dagrum_axe": "Dagrum Axe",
       "block.project_moira.ashwood_pressure_plate": "Ashwood Pressure Plate",
       "block.project_moira.teragrass": "Teragrass",
+      "block.project_moira.invis_block": "Invis Block",
       "block.project_moira.teradirt": "Teradirt",
       "block.project_moira.ashwood_leaves": "Ashwood Leaves",
       "block.project_moira.ashwood_fence_gate": "Ashwood Fence Gate",
@@ -546,12 +617,14 @@
       "block.project_moira.dagrum_block": "Block of Dagrum",
       "block.project_moira.ashwood_button": "Ashwood Button",
       "block.project_moira.ashwood_stairs": "Ashwood Stairs",
+      "block.project_moira.ash_fruit": "Ash Fruit",
       "block.project_moira.ashwood_planks": "Ashwood Planks",
       "item.project_moira.dagrum_shovel": "Dagrum Shovel",
       "block.project_moira.terashroom": "Terashroom",
       "item.project_moira.dagrum_armor_boots": "Dagrum Boots",
       "block.project_moira.ashwood_log": "Ashwood Log",
       "block.project_moira.teraflower": "Teraflower",
+      "item.project_moira.ash_fruit_chunks": "Ash Fruit Chunks",
       "block.project_moira.ashwood_wood": "Ashwood Wood",
       "item.project_moira.dagrum_ingot": "Dagrum",
       "block.project_moira.ashwood_slab": "Ashwood Slab",
