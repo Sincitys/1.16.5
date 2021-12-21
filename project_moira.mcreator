@@ -596,6 +596,26 @@
         ]
       },
       "path": "~/Dylan Work/Teraland"
+    },
+    {
+      "name": "DagrumDagger",
+      "type": "tool",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_dagger",
+      "path": "~/Dylan Work/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumDaggerRecipe",
+      "type": "recipe",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_dagger_recipe",
+      "path": "~/Dylan Work/Dagrum Tier 1"
     }
   ],
   "variable_elements": [],
@@ -624,6 +644,7 @@
       "item.project_moira.dagrum_armor_boots": "Dagrum Boots",
       "block.project_moira.ashwood_log": "Ashwood Log",
       "block.project_moira.teraflower": "Teraflower",
+      "item.project_moira.dagrum_dagger": "Dagrum Dagger",
       "item.project_moira.ash_fruit_chunks": "Ash Fruit Chunks",
       "block.project_moira.ashwood_wood": "Ashwood Wood",
       "item.project_moira.dagrum_ingot": "Dagrum",

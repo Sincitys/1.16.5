@@ -1,0 +1,7 @@
+{
+  "parent": "project_moira:custom/dagrum_dagger",
+  "textures": {
+    "0": "project_moira:blocks/dagrum_dagger",
+    "particle": "project_moira:items/dagrum_sword"
+  }
+}

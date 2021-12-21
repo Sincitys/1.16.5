@@ -11,7 +11,7 @@
     "tintType": "No tint",
     "isItemTinted": false,
     "plantType": "normal",
-    "staticPlantGenerationType": "Grass",
+    "staticPlantGenerationType": "Flower",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 100,
     "growapableSpawnType": "Plains",
@@ -63,7 +63,7 @@
       "value": ""
     },
     "dropAmount": 1,
-    "forceTicking": true,
+    "forceTicking": false,
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,
@@ -83,6 +83,12 @@
       },
       {
         "value": "CUSTOM:Teragrass"
+      },
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.DIRT#0"
       }
     ],
     "frequencyOnChunks": 1,

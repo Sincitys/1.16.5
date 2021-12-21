@@ -2,9 +2,9 @@
   "_fv": 24,
   "_type": "tool",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "dagrum_pickaxe",
-    "customModelName": "Normal",
+    "customModelName": "dagrum_pickaxe:default",
     "name": "Dagrum Pickaxe",
     "specialInfo": [],
     "creativeTab": {

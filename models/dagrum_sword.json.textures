@@ -2,9 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "m_3": "",
-        "m_2": "",
-        "m_1": ""
+        "0": "dagrum_sword"
       },
       "name": "default"
     }

@@ -12,10 +12,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.NoiseDependant;
-import net.minecraft.world.gen.feature.RandomPatchFeature;
+import net.minecraft.world.gen.feature.Features;
 import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.DefaultFlowersFeature;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
@@ -43,6 +42,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.FlowerBlock;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -81,7 +81,12 @@ public class TeraflowerBlock extends ProjectMoiraModElements.ModElement {
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			feature = new RandomPatchFeature(BlockClusterFeatureConfig.field_236587_a_) {
+			feature = new DefaultFlowersFeature(BlockClusterFeatureConfig.field_236587_a_) {
+				@Override
+				public BlockState getFlowerToPlace(Random random, BlockPos bp, BlockClusterFeatureConfig fc) {
+					return block.getDefaultState();
+				}
+
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random random, BlockPos pos, BlockClusterFeatureConfig config) {
 					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
@@ -93,10 +98,11 @@ public class TeraflowerBlock extends ProjectMoiraModElements.ModElement {
 					return super.generate(world, generator, random, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(
-					(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer())).tries(20)
-							.build())
-					.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8, 0, 1)));
+			configuredFeature = feature
+					.withConfiguration(
+							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
+									.tries(20).build())
+					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(1);
 			event.getRegistry().register(feature.setRegistryName("teraflower"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("project_moira:teraflower"), configuredFeature);
 		}
@@ -274,7 +280,7 @@ public class TeraflowerBlock extends ProjectMoiraModElements.ModElement {
 
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
-			super(Effects.SPEED, 100, Block.Properties.create(Material.PLANTS).tickRandomly().doesNotBlockMovement().sound(SoundType.PLANT)
+			super(Effects.SPEED, 100, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 10));
 			setRegistryName("teraflower");
 		}
@@ -305,7 +311,7 @@ public class TeraflowerBlock extends ProjectMoiraModElements.ModElement {
 		@Override
 		public boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			Block ground = state.getBlock();
-			return (ground == TeradirtBlock.block || ground == TeragrassBlock.block
+			return (ground == TeradirtBlock.block || ground == TeragrassBlock.block || ground == Blocks.GRASS_BLOCK || ground == Blocks.DIRT
 
 			)
 

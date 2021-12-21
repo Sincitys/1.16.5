@@ -3,14 +3,7 @@
   "_type": "tag",
   "definition": {
     "type": "Items",
-    "items": [
-      {
-        "value": "CUSTOM:Teraflower"
-      },
-      {
-        "value": "CUSTOM:Terashroom"
-      }
-    ],
+    "items": [],
     "blocks": [],
     "functions": [],
     "entities": [],

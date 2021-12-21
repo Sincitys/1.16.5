@@ -1,6 +1,6 @@
 {
-  "parent": "item/handheld",
+  "parent": "project_moira:custom/swordtest",
   "textures": {
-    "layer0": "project_moira:items/dagrum_sword"
+    "particle": "project_moira:items/dagrum_sword"
   }
 }

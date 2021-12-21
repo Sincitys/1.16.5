@@ -1,6 +1,7 @@
 {
-  "parent": "item/handheld",
+  "parent": "project_moira:custom/dagrum_pickaxe",
   "textures": {
-    "layer0": "project_moira:items/dagrum_pickaxe"
+    "1": "project_moira:blocks/dagrum_pickaxe",
+    "particle": "project_moira:items/dagrum_pickaxe"
   }
 }
