@@ -36,7 +36,7 @@
       "value": ""
     },
     "music": {
-      "value": "music.nether.crimson_forest"
+      "value": ""
     },
     "moodSound": {
       "value": ""
@@ -47,9 +47,9 @@
       "value": "SMOKE_NORMAL"
     },
     "particlesProbability": 2.5,
-    "biomeCategory": "FOREST",
+    "biomeCategory": "PLAINS",
     "parent": {
-      "value": "CUSTOM:Teraland"
+      "value": "No parent"
     },
     "rainingPossibility": 0.5,
     "temperature": 1.0,
@@ -64,7 +64,7 @@
       "SPOOKY",
       "WASTELAND"
     ],
-    "grassPerChunk": 0,
+    "grassPerChunk": 2,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,

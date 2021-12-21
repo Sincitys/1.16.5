@@ -1,6 +1,7 @@
 {
-  "parent": "item/handheld",
+  "parent": "project_moira:custom/dagrum_shovel",
   "textures": {
-    "layer0": "project_moira:items/dagrum_shovel"
+    "2": "project_moira:blocks/dagrum_shovel",
+    "particle": "project_moira:items/dagrum_shovel"
   }
 }

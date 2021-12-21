@@ -48,6 +48,7 @@ import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.FlowerBlock;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -302,7 +303,7 @@ public class TerashroomBlock extends ProjectMoiraModElements.ModElement {
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
 			super(Effects.SPEED, 100,
-					Block.Properties.create(Material.PLANTS, MaterialColor.GRASS).tickRandomly().doesNotBlockMovement().sound(SoundType.PLANT)
+					Block.Properties.create(Material.PLANTS, MaterialColor.GRASS).doesNotBlockMovement().sound(SoundType.PLANT)
 							.hardnessAndResistance(0f, 0f).setNeedsPostProcessing((bs, br, bp) -> true).setEmmisiveRendering((bs, br, bp) -> true)
 							.setLightLevel(s -> 15));
 			setRegistryName("terashroom");
@@ -339,7 +340,7 @@ public class TerashroomBlock extends ProjectMoiraModElements.ModElement {
 		@Override
 		public boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			Block ground = state.getBlock();
-			return (ground == TeradirtBlock.block || ground == TeragrassBlock.block
+			return (ground == TeradirtBlock.block || ground == TeragrassBlock.block || ground == Blocks.GRASS_BLOCK || ground == Blocks.DIRT
 
 			)
 
@@ -356,7 +357,7 @@ public class TerashroomBlock extends ProjectMoiraModElements.ModElement {
 
 		@Override
 		public PlantType getPlantType(IBlockReader world, BlockPos pos) {
-			return PlantType.CAVE;
+			return PlantType.PLAINS;
 		}
 	}
 }

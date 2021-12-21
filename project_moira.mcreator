@@ -82,16 +82,6 @@
       "path": "~/Dylan Work/Dagrum Tier 1"
     },
     {
-      "name": "DagrumSword",
-      "type": "tool",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dagrum_sword",
-      "path": "~/Dylan Work/Dagrum Tier 1"
-    },
-    {
       "name": "DagrumShovel",
       "type": "tool",
       "sortid": 10,
@@ -616,6 +606,16 @@
       "ids": {},
       "registry_name": "dagrum_dagger_recipe",
       "path": "~/Dylan Work/Dagrum Tier 1"
+    },
+    {
+      "name": "DagrumSword",
+      "type": "tool",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dagrum_sword",
+      "path": "~/Dylan Work/Dagrum Tier 1"
     }
   ],
   "variable_elements": [],
@@ -650,8 +650,8 @@
       "item.project_moira.dagrum_ingot": "Dagrum",
       "block.project_moira.ashwood_slab": "Ashwood Slab",
       "block.project_moira.ashwood_fence": "Ashwood Fence",
-      "item.project_moira.dagrum_sword": "Dagrum Sword",
       "item.project_moira.dagrum_hoe": "Dagrum Hoe",
+      "item.project_moira.dagrum_sword": "Dagrum Sword",
       "item.project_moira.dagrum_pickaxe": "Dagrum Pickaxe"
     }
   },

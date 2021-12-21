@@ -1,6 +1,7 @@
 {
-  "parent": "item/handheld",
+  "parent": "project_moira:custom/dagrum_hoe",
   "textures": {
-    "layer0": "project_moira:items/dagrum_hoe"
+    "2": "project_moira:blocks/dahrum_hoe",
+    "particle": "project_moira:items/dagrum_hoe"
   }
 }

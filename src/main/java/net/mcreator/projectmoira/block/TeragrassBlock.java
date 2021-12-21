@@ -6,6 +6,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.IPlantable;
 
@@ -66,7 +67,8 @@ public class TeragrassBlock extends ProjectMoiraModElements.ModElement {
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
+			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0)
+					.harvestLevel(1).harvestTool(ToolType.SHOVEL).setRequiresTool());
 			setRegistryName("teragrass");
 		}
 

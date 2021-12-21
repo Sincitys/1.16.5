@@ -2,9 +2,9 @@
   "_fv": 24,
   "_type": "tool",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "dagrum_hoe",
-    "customModelName": "Normal",
+    "customModelName": "dagrum_hoe:default",
     "name": "Dagrum Hoe",
     "specialInfo": [],
     "creativeTab": {

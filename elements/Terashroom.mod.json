@@ -14,7 +14,7 @@
     "staticPlantGenerationType": "Grass",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 100,
-    "growapableSpawnType": "Cave",
+    "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Grass",
     "customBoundingBox": false,
@@ -63,7 +63,7 @@
       "value": ""
     },
     "dropAmount": 1,
-    "forceTicking": true,
+    "forceTicking": false,
     "emissiveRendering": true,
     "hasTileEntity": false,
     "isReplaceable": true,
@@ -83,6 +83,12 @@
       },
       {
         "value": "CUSTOM:Teragrass"
+      },
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.DIRT#0"
       }
     ],
     "frequencyOnChunks": 1,

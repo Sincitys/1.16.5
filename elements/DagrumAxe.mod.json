@@ -2,9 +2,9 @@
   "_fv": 24,
   "_type": "tool",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "dagrum_axe",
-    "customModelName": "Normal",
+    "customModelName": "dagrum_axe:default",
     "name": "Dagrum Axe",
     "specialInfo": [],
     "creativeTab": {

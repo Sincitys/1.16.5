@@ -67,7 +67,7 @@
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "GRASS",
     "creativePickItem": {
       "value": ""
     },

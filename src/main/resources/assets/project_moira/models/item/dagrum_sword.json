@@ -1,6 +1,7 @@
 {
-  "parent": "project_moira:custom/swordtest",
+  "parent": "project_moira:custom/dagrum_sword",
   "textures": {
-    "particle": "project_moira:items/dagrum_sword"
+    "0": "project_moira:blocks/dagrum_sword",
+    "particle": "project_moira:items/dagrum_hd"
   }
 }
