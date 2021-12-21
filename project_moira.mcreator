@@ -676,6 +676,16 @@
       "ids": {},
       "registry_name": "sand_blocks",
       "path": "~/Dylan Work/Teraland"
+    },
+    {
+      "name": "AshSkeleton",
+      "type": "livingentity",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ash_skeleton",
+      "path": "~/Dylan Work/Teraland"
     }
   ],
   "variable_elements": [],
@@ -707,6 +717,7 @@
       "block.project_moira.teraflower": "Teraflower",
       "block.project_moira.tera_sand": "Tera Sand",
       "item.project_moira.dagrum_dagger": "Dagrum Dagger",
+      "item.project_moira.ash_skeleton_spawn_egg": "Ash Skeleton Spawn Egg",
       "item.project_moira.ash_fruit_chunks": "Ash Fruit Chunks",
       "block.project_moira.ashwood_wood": "Ashwood Wood",
       "item.project_moira.dagrum_ingot": "Dagrum",
@@ -715,7 +726,8 @@
       "block.project_moira.ash_cap_stem": "Ash Cap Stem",
       "item.project_moira.dagrum_hoe": "Dagrum Hoe",
       "item.project_moira.dagrum_sword": "Dagrum Sword",
-      "item.project_moira.dagrum_pickaxe": "Dagrum Pickaxe"
+      "item.project_moira.dagrum_pickaxe": "Dagrum Pickaxe",
+      "entity.project_moira.ash_skeleton": "Ash Skeleton"
     }
   },
   "foldersRoot": {
