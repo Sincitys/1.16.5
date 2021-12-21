@@ -100,8 +100,8 @@ public class AshFruitBlock extends ProjectMoiraModElements.ModElement {
 			configuredFeature = feature
 					.withConfiguration(
 							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
-									.tries(64).build())
-					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(5);
+									.tries(10).build())
+					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(4);
 			event.getRegistry().register(feature.setRegistryName("ash_fruit"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("project_moira:ash_fruit"), configuredFeature);
 		}
@@ -109,6 +109,11 @@ public class AshFruitBlock extends ProjectMoiraModElements.ModElement {
 
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("project_moira:teraland").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION).add(() -> configuredFeature);
 	}
 
@@ -162,7 +167,7 @@ public class AshFruitBlock extends ProjectMoiraModElements.ModElement {
 
 		@Override
 		public PlantType getPlantType(IBlockReader world, BlockPos pos) {
-			return PlantType.CROP;
+			return PlantType.PLAINS;
 		}
 	}
 }

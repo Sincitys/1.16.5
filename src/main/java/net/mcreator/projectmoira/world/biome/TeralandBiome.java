@@ -15,7 +15,6 @@ import net.minecraft.world.gen.treedecorator.CocoaTreeDecorator;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.NoiseDependant;
 import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
 import net.minecraft.world.gen.foliageplacer.JungleFoliagePlacer;
 import net.minecraft.world.gen.feature.TwoLayerFeature;
@@ -27,7 +26,6 @@ import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.ParticleEffectAmbience;
 import net.minecraft.world.biome.MobSpawnInfo;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.BiomeGenerationSettings;
 import net.minecraft.world.biome.BiomeAmbience;
 import net.minecraft.world.biome.Biome;
@@ -69,8 +67,8 @@ public class TeralandBiome extends ProjectMoiraModElements.ModElement {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-13421773).setWaterColor(-526859).setWaterFogColor(-13290187)
-						.withSkyColor(-13421773).withFoliageColor(-14211289).withGrassColor(-1447447)
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-15395563).setWaterColor(1381396).setWaterFogColor(-15395820)
+						.withSkyColor(-15395563).withFoliageColor(-1).withGrassColor(-1447447)
 						.setParticle(new ParticleEffectAmbience(ParticleTypes.SMOKE, 0.025f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(TeragrassBlock.block.getDefaultState(),
@@ -84,12 +82,6 @@ public class TeralandBiome extends ProjectMoiraModElements.ModElement {
 										new CustomCocoaTreeDecorator())).build())
 						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
 						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(3, 0.1F, 1))));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-						Feature.RANDOM_PATCH.withConfiguration(Features.Configs.GRASS_PATCH_CONFIG).withPlacement(Features.Placements.PATCH_PLACEMENT)
-								.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8D, 5, 2))));
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withLavaAndWaterLakes(biomeGenerationSettings);
-				DefaultBiomeFeatures.withOceanCavesAndCanyons(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.SKELETON, 20, 4, 4));
 				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.WOLF, 20, 4, 4));

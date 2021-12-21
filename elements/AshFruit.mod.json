@@ -14,7 +14,7 @@
     "staticPlantGenerationType": "Flower",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 100,
-    "growapableSpawnType": "Crop",
+    "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
     "customBoundingBox": false,
@@ -82,11 +82,15 @@
         "value": "CUSTOM:AshwoodLog"
       }
     ],
-    "frequencyOnChunks": 5,
+    "frequencyOnChunks": 4,
     "spawnWorldTypes": [
       "Surface"
     ],
-    "restrictionBiomes": [],
-    "patchSize": 64
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Teraland"
+      }
+    ],
+    "patchSize": 10
   }
 }

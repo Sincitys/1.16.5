@@ -3,12 +3,15 @@ package net.mcreator.projectmoira.block;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.IPlantable;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.gen.feature.template.RuleTest;
 import net.minecraft.world.gen.feature.template.IRuleTestType;
@@ -34,6 +37,8 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.fluid.FluidState;
+import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
@@ -65,10 +70,16 @@ public class TeragrassBlock extends ProjectMoiraModElements.ModElement {
 				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
 	}
 
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public void clientLoad(FMLClientSetupEvent event) {
+		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
+	}
+
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0)
-					.harvestLevel(1).harvestTool(ToolType.SHOVEL).setRequiresTool());
+					.harvestLevel(1).harvestTool(ToolType.SHOVEL).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
 			setRegistryName("teragrass");
 		}
 
@@ -78,8 +89,13 @@ public class TeragrassBlock extends ProjectMoiraModElements.ModElement {
 		}
 
 		@Override
+		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
+			return true;
+		}
+
+		@Override
 		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
-			return 15;
+			return 0;
 		}
 
 		@Override
@@ -141,7 +157,7 @@ public class TeragrassBlock extends ProjectMoiraModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 16)).range(256)
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 16)).range(200)
 					.square().func_242731_b(10);
 			event.getRegistry().register(feature.setRegistryName("teragrass"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("project_moira:teragrass"), configuredFeature);

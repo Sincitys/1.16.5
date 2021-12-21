@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:sand",
+    "project_moira:tera_sand"
+  ]
+}

@@ -10,7 +10,7 @@
       "value": "CUSTOM:Teradirt"
     },
     "airColor": {
-      "value": -13421773,
+      "value": -15395563,
       "falpha": 0.0
     },
     "grassColor": {
@@ -18,15 +18,15 @@
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -14211289,
+      "value": -1,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -526859,
+      "value": 1381396,
       "falpha": 0.0
     },
     "waterFogColor": {
-      "value": -13290187,
+      "value": -15395820,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -64,7 +64,7 @@
       "SPOOKY",
       "WASTELAND"
     ],
-    "grassPerChunk": 2,
+    "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
@@ -109,11 +109,7 @@
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
-    "defaultFeatures": [
-      "Caves",
-      "Lakes",
-      "OceanCaves"
-    ],
+    "defaultFeatures": [],
     "spawnEntries": [
       {
         "entity": {

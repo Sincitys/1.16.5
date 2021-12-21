@@ -132,7 +132,7 @@ public class TeradirtBlock extends ProjectMoiraModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 16)).range(200)
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 16)).range(128)
 					.square().func_242731_b(10);
 			event.getRegistry().register(feature.setRegistryName("teradirt"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("project_moira:teradirt"), configuredFeature);

@@ -1,0 +1,10 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "project_moira:blocks/ash_cap_inside",
+    "top": "project_moira:blocks/ash_cap_inside",
+    "side": "project_moira:blocks/ash_cap_stem",
+    "overlay": "project_moira:blocks/ash_cap_stem",
+    "particle": "project_moira:blocks/ash_cap_inside"
+  }
+}

@@ -17,7 +17,7 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -50,7 +50,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": true,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
       "value": "GRASS"
     },
@@ -382,7 +382,7 @@
     ],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 256
+    "minGenerateHeight": 1,
+    "maxGenerateHeight": 200
   }
 }
