@@ -689,11 +689,29 @@
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "tera_biome_music",
+      "files": [
+        "tera_music"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "tera_background_noise",
+      "files": [
+        "tera_background_noise"
+      ],
+      "category": "ambient",
+      "subtitle": ""
+    }
+  ],
   "language_map": {
     "en_us": {
       "item.project_moira.dagrum_armor_helmet": "Dagrum Helmet",
       "item.project_moira.dagrum_armor_chestplate": "Dagrum Chestplate",
+      "subtitles.tera_biome_music": "",
       "biome.project_moira.teraland": "Teraland",
       "item.project_moira.dagrum_armor_leggings": "Dagrum Leggings",
       "block.project_moira.ash_cap": "Ash Cap",
@@ -712,6 +730,7 @@
       "block.project_moira.ashwood_planks": "Ashwood Planks",
       "item.project_moira.dagrum_shovel": "Dagrum Shovel",
       "block.project_moira.terashroom": "Terashroom",
+      "subtitles.tera_background_noise": "",
       "item.project_moira.dagrum_armor_boots": "Dagrum Boots",
       "block.project_moira.ashwood_log": "Ashwood Log",
       "block.project_moira.teraflower": "Teraflower",
@@ -770,6 +789,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.projectmoira",
     "lockBaseModFiles": false
   },

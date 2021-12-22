@@ -1,0 +1,20 @@
+{
+  "tera_biome_music": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "project_moira:tera_music",
+        "stream": true
+      }
+    ]
+  },
+  "tera_background_noise": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "project_moira:tera_background_noise",
+        "stream": false
+      }
+    ]
+  }
+}

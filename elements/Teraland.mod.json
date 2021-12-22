@@ -30,13 +30,13 @@
       "falpha": 0.0
     },
     "ambientSound": {
-      "value": ""
+      "value": "CUSTOM:tera_background_noise"
     },
     "additionsSound": {
       "value": ""
     },
     "music": {
-      "value": ""
+      "value": "CUSTOM:tera_biome_music"
     },
     "moodSound": {
       "value": ""

@@ -46,6 +46,10 @@ public class ProjectMoiraModElements {
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 
 	public ProjectMoiraModElements() {
+		sounds.put(new ResourceLocation("project_moira", "tera_biome_music"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("project_moira", "tera_biome_music")));
+		sounds.put(new ResourceLocation("project_moira", "tera_background_noise"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("project_moira", "tera_background_noise")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("project_moira").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

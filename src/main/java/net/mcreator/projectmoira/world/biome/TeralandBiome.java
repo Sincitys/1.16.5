@@ -34,11 +34,13 @@ import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.MutableBoundingBox;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Direction;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.client.audio.BackgroundMusicSelector;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.projectmoira.block.TeragrassBlock;
@@ -69,6 +71,11 @@ public class TeralandBiome extends ProjectMoiraModElements.ModElement {
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-15395563).setWaterColor(1381396).setWaterFogColor(-15395820)
 						.withSkyColor(-15395563).withFoliageColor(-1).withGrassColor(-1447447)
+						.setAmbientSound(
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+										.getValue(new ResourceLocation("project_moira:tera_background_noise")))
+						.setMusic(new BackgroundMusicSelector((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+								.getValue(new ResourceLocation("project_moira:tera_biome_music")), 12000, 24000, true))
 						.setParticle(new ParticleEffectAmbience(ParticleTypes.SMOKE, 0.025f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(TeragrassBlock.block.getDefaultState(),
