@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Ash Skeleton",
     "mobLabel": "",
-    "mobModelName": "Biped",
+    "mobModelName": "ModelAshSkeleton",
     "mobModelTexture": "ash_skeleton.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
@@ -27,10 +27,10 @@
     "bossBarColor": "WHITE",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": "Items.BOW"
+      "value": "Items.CROSSBOW"
     },
     "equipmentOffHand": {
-      "value": "Items.ARROW"
+      "value": ""
     },
     "equipmentHelmet": {
       "value": ""
@@ -96,11 +96,11 @@
       "value": "LAND_LAVA"
     },
     "particleSpawningShape": "Plane",
-    "particleSpawningRadious": 0.2,
-    "particleAmount": 2,
+    "particleSpawningRadious": 0.1,
+    "particleAmount": 1,
     "hasAI": true,
-    "aiBase": "Skeleton",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"200\" y=\"22\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"374\" y=\"79\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">CUSTOM:AshSkeleton</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
