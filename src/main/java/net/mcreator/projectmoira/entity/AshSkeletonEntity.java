@@ -28,6 +28,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
+import net.minecraft.entity.monster.SkeletonEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RangedAttackGoal;
@@ -105,7 +106,7 @@ public class AshSkeletonEntity extends ProjectMoiraModElements.ModElement {
 		}
 	}
 
-	public static class CustomEntity extends MonsterEntity implements IRangedAttackMob {
+	public static class CustomEntity extends SkeletonEntity implements IRangedAttackMob {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -126,9 +127,9 @@ public class AshSkeletonEntity extends ProjectMoiraModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, true));
+			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
 			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(5, new SwimGoal(this));
 			this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
@@ -176,15 +177,11 @@ public class AshSkeletonEntity extends ProjectMoiraModElements.ModElement {
 			Random random = this.rand;
 			Entity entity = this;
 			if (true)
-				for (int l = 0; l < 4; ++l) {
-					double d0 = (x + random.nextFloat());
-					double d1 = (y + random.nextFloat());
-					double d2 = (z + random.nextFloat());
-					int i1 = random.nextInt(2) * 2 - 1;
-					double d3 = (random.nextFloat() - 0.5D) * 0.5D;
-					double d4 = (random.nextFloat() - 0.5D) * 0.5D;
-					double d5 = (random.nextFloat() - 0.5D) * 0.5D;
-					world.addParticle(ParticleTypes.LANDING_LAVA, d0, d1, d2, d3, d4, d5);
+				for (int l = 0; l < 2; ++l) {
+					double d0 = (x + 0.5) + (random.nextFloat() - 0.5) * 0.2D * 20;
+					double d1 = ((y + 0.7) + (random.nextFloat() - 0.5) * 0.2D) + 0.5;
+					double d2 = (z + 0.5) + (random.nextFloat() - 0.5) * 0.2D * 20;
+					world.addParticle(ParticleTypes.LANDING_LAVA, d0, d1, d2, 0, 0, 0);
 				}
 		}
 	}

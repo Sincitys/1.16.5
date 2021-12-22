@@ -18,5 +18,11 @@ authors="Sincitys, MCreator"
     side="BOTH"
 
 
+[[dependencies.project_moira]]
+    modId="mcreator_link"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 

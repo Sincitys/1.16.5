@@ -686,6 +686,16 @@
       "ids": {},
       "registry_name": "ash_skeleton",
       "path": "~/Dylan Work/Teraland"
+    },
+    {
+      "name": "AshSkeletonAnim",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ash_skeleton_anim",
+      "path": "~/Dylan Work/Teraland"
     }
   ],
   "variable_elements": [],
@@ -710,8 +720,8 @@
   "language_map": {
     "en_us": {
       "item.project_moira.dagrum_armor_helmet": "Dagrum Helmet",
-      "item.project_moira.dagrum_armor_chestplate": "Dagrum Chestplate",
       "subtitles.tera_biome_music": "",
+      "item.project_moira.dagrum_armor_chestplate": "Dagrum Chestplate",
       "biome.project_moira.teraland": "Teraland",
       "item.project_moira.dagrum_armor_leggings": "Dagrum Leggings",
       "block.project_moira.ash_cap": "Ash Cap",
@@ -787,7 +797,9 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "mcreator_link"
+    ],
     "currentGenerator": "forge-1.16.5",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.projectmoira",
